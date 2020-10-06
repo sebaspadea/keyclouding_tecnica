@@ -15,7 +15,7 @@ class PagesController < ApplicationController
     url = 'https://staging.keyclouding.cl/api/v1/company/authentication'
     RestClient.post( url,
     {
-      :secret => "89zpHBvaEyKMJCE5DO9Rpx8SvC1Ww5nDhRb-ckcKRRmeE4Yi0I0uJIackHWzCD3XUzLWT8_KzXOFhc0JoD5GWo7UUMx3sy3yaMQRUIjyxtr-4dmF51bL4LkptX1EVTtUmABwh",
+      :secret => ENV["API_KEY_KEYCLOUDING"],
     })
   end
 
